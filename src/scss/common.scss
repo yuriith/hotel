@@ -1,0 +1,10 @@
+// Заголовки, загальні БЕМ блоки та інше...
+.title {
+  font-weight: 700;
+  @include adaptiveValue("font-size", 45, 32);
+  line-height: 133.02%;
+  color: #292929;
+  span {
+    color: #FF7500;
+  }
+}

@@ -1,0 +1,120 @@
+//====================================================================================================
+.page {
+  // .page__main
+  &__main {
+  }
+  // .page__features
+  &__features {
+  }
+}
+.main {
+  background-color: #121212;
+  // .main__container
+  &__container {
+    padding-top: rem(175);
+    padding-bottom: rem(100);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  // .main__title
+  &__title {
+    @include adaptiveValue("font-size", 50, 36);
+    text-transform: uppercase;
+    color: #FFFFFF;
+    max-width: rem(585);
+  }
+  // .main__list
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+  // .main__image
+  &__image {
+    margin: 0 auto;
+    max-width: rem(1440);
+    img {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+    }
+  }
+}
+.list-main {
+  // .list-main__item
+  &__item {
+    padding-top: rem(16);
+    padding-bottom: rem(8);
+    padding-right: rem(6);
+    border-bottom: 1.2px solid #FFFFFF;
+    color: #FFFFFF;
+    width: rem(235);
+  }
+  // .list-main__link
+  &__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    font-size: rem(16);
+    line-height: 133.02%;
+    transition: all 0.3s ease 0s;
+    @media (any-hover: hover){
+      &:hover{
+        color: #FF7500;
+        svg {
+          path {
+            stroke: #FF7500;
+          }
+          
+        }
+      }
+    }
+  }
+}
+
+.features {
+  padding-top: rem(71);
+  padding-bottom: rem(110);
+  // .features__container
+  &__container {
+    max-width: rem(840);
+  }
+  // .features__list
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    justify-content: space-between;
+    column-gap: rem(20);
+    row-gap: rem(20);
+  }
+  // .features__item
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: rem(14);
+  }
+  // .features__icon
+  &__icon {
+    height: rem(74);
+    width: rem(74);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 117, 0, 0.04);
+  }
+  // .features__caption
+  &__caption {
+    font-weight: 500;
+    font-size: rem(16);
+    line-height: 131.02%;
+    color: #565656;
+  }
+}
+
+//====================================================================================================
